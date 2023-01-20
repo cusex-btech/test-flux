@@ -7,7 +7,7 @@ spec:
   imageRepositoryRef:
     name: odoo
   filterTags:
-    pattern: '^dev-(?P<major>[\d]+).(?P<mid>[\d]+).(?P<minor>[\d]+)'
+    pattern: '^16-(?P<major>[\d]+).(?P<mid>[\d]+).(?P<minor>[\d]+)'
     extract: '$minor'
   policy:
     numerical:
