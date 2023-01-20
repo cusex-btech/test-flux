@@ -9,5 +9,5 @@ spec:
     name: odoo
   policy:
     semver:
-      range: 16-v2.0.x
+      range: '>1.0.0-rc <2.0.0-rc'
 
