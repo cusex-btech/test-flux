@@ -2,11 +2,11 @@
 apiVersion: image.toolkit.fluxcd.io/v1beta1
 kind: ImagePolicy
 metadata:
-  name: podinfo
+  name: odoo
   namespace: flux-system
 spec:
   imageRepositoryRef:
-    name: podinfo
+    name: odoo
   policy:
     semver:
       range: 16-v2.0.x
