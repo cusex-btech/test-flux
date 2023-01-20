@@ -5,10 +5,7 @@ metadata:
   namespace: flux-system
 spec:
   imageRepositoryRef:
-    name: odoo
-  filterTags:
-    pattern: '^16-(?P<major>[\d]+).(?P<mid>[\d]+).(?P<minor>[\d]+)'
-    extract: '$minor'
+    name: odoo'
   policy:
-    numerical:
-      order: asc
+    semver:
+      range: 16-v2.0.x
