@@ -1,0 +1,14 @@
+apiVersion: image.toolkit.fluxcd.io/v1beta1
+kind: ImagePolicy
+metadata:
+  name: odoo--policy
+  namespace: flux-system
+spec:
+  imageRepositoryRef:
+    name: odoo
+  filterTags:
+    pattern: '^dev-(?P<major>[\d]+).(?P<mid>[\d]+).(?P<minor>[\d]+)'
+    extract: '$minor'
+  policy:
+    numerical:
+      order: asc
